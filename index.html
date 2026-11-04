@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatorial | Calculadora Matemática</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #171321;
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 450px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      header h1 {
+        font-size: 42px;
+        color: #b99aff;
+      }
+
+      header p {
+        color: #aaa3bb;
+        margin-top: 10px;
+      }
+
+      .calculator {
+        background: #272137;
+        padding: 30px;
+        border-radius: 15px;
+      }
+
+      h2 {
+        margin-bottom: 25px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 100%;
+        padding: 14px;
+        background: #171321;
+        border: 1px solid #51436e;
+        border-radius: 7px;
+        color: white;
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 20px;
+        background: #b99aff;
+        border: none;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #a47cf2;
+      }
+
+      #resultado {
+        margin-top: 25px;
+        color: #c9b5ff;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 25px;
+        color: #aaa3bb;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Fatorial.</h1>
+        <p>Descubra o fatorial de qualquer número.</p>
+      </header>
+
+      <section class="calculator">
+        <h2>Calculadora de Fatorial</h2>
+
+        <label>Digite um número</label>
+        <input type="number" id="numero" placeholder="Ex: 5" />
+
+        <button onclick="mostrarFatorial()">Calcular</button>
+
+        <div id="resultado"></div>
+      </section>
+
+      <footer>
+        <p>Fatorial © 2026</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
